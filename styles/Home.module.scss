@@ -1,0 +1,44 @@
+.container {
+  flex: 1;
+}
+.section {
+  h1 {
+    color: black;
+    font-size: 60px;
+    width: 200px;
+    word-break: break-all;
+    position: absolute;
+    right: 0;
+  }
+  &:first-of-type {
+    background-image: url("../public/coffee.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    h2 {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      font-size: 30px;
+    }
+  }
+  &:last-of-type {
+    background-image: url("../public/crystal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+  }
+  height: 100vh;
+}
+
+.form-container {
+  opacity: 0.95;
+  > iframe {
+    position: relative;
+    width: 550px;
+    height: 350px;
+  }
+}
